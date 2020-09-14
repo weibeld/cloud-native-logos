@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="76px" viewBox="0 0 77 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill-rule="nonzero">
+            <path d="M39.068,0.318 C37.34,0.226 35.6,0.983 34.549,2.368 C32.468,4.883 33.256,9.081 36.189,10.581 L36.103,20.006 C32.386,21.746 28.75,23.648 24.972,25.253 C23.096031,23.8074638 21.2375625,22.3393571 19.397,20.849 C18.873,20.235 17.596,19.873 17.97,18.9 C18.669,15.156 14.523,11.665 10.947,12.968 C7.76,13.888 6.077,17.92 7.752,20.804 C8.907,23.411 12.198,24.276 14.732,23.334 C17.174,25.16 19.594,27.202 22.018,29.11 C21.1150122,33.1653224 20.1535788,37.2074095 19.134,41.235 C17.19,41.745 15.227,42.18 13.267,42.625 C12.205,42.634 10.842,43.665 9.991,42.959 C8.173,40.619 4.431,40.453 2.293,42.435 C-0.335,44.575 -0.157,49.107 2.68,50.987 C5.509,53.361 10.303,51.577 11.204,48.092 C14.106,47.276 17.242,46.645 20.265,46.035 C22.937,49.203 25.465,52.479 28.061,55.722 L24.114,63.872 C21.661,63.85 19.269,65.602 18.603,67.972 C17.448,71.588 20.973,75.534 24.685,74.921 C28.594,74.529 30.729,69.381 28.422,66.276 C29.527,63.424 31.096,60.628 32.378,57.803 L44.9,57.818 L48.175,64.662 C48.764,65.505 48.928,66.236 48.175,66.993 C46.361,70.196 48.61,74.876 52.38,75.103 C55.1,75.489 57.765,73.528 58.328,70.865 C59.264,67.615 56.473,64.255 53.214,64.055 C51.846,61.333 50.575,58.487 49.216,55.734 C51.836,52.488 54.384,49.181 57.108,46.021 C60.053,46.664 62.987,47.355 65.925,48.028 C66.333,51.101 69.765,53.165 72.692,52.318 C76.199,51.525 78.017,46.92 75.921,43.973 C74.071,41.044 69.384,40.684 67.165,43.387 C64.142,42.693 61.115,42.015 58.098,41.298 C57.138,37.252 56.235,33.193 55.309,29.139 L61.839,23.935 C62.329,23.098 62.983,23.835 63.657,23.905 C66.54,24.709 69.871,22.777 70.366,19.775 C71.107,16.684 68.759,13.285 65.546,13.086 C62.092,12.651 58.869,16.076 59.579,19.498 C57.267,21.494 54.749,23.434 52.262,25.306 C48.577,23.613 44.875,21.776 41.192,20.003 L41.122,10.723 C42.872,10.042 44.152,8.357 44.252,6.47 C44.821,3.411 42.176,0.257 39.068,0.318 L39.068,0.318 Z" id="Path" fill="#FFFFF8"></path>
+            <polygon id="Path" stroke="#000095" stroke-width="3.559" fill="#F0F0F0" stroke-linecap="round" stroke-linejoin="bevel" points="46.008 54.638 31.256 54.62 22.072 43.076 25.372 28.697 38.671 22.313 51.954 28.73 55.219 43.116"></polygon>
+            <g transform="translate(35.184000, 2.002000)" stroke="#000095" stroke-width="2">
+                <line x1="3.492" y1="6.959" x2="3.487" y2="20.311" id="Path" fill-opacity="0.055" fill="#000000"></line>
+                <circle id="Oval" fill="#F0F0F0" stroke-linecap="round" stroke-linejoin="bevel" cx="3.681" cy="3.774" r="3.131"></circle>
+            </g>
+            <g transform="translate(17.709841, 22.569948) rotate(-51.420000) translate(-17.709841, -22.569948) translate(14.209841, 12.069948)" fill="#000000" stroke="#000095" stroke-width="2">
+                <line x1="3.492" y1="6.959" x2="3.488" y2="20.311" id="Path"></line>
+                <circle id="Oval" stroke-linecap="round" stroke-linejoin="bevel" cx="3.681" cy="3.774" r="3.131"></circle>
+            </g>
+            <g transform="translate(12.503978, 45.245195) rotate(-102.840000) translate(-12.503978, -45.245195) translate(9.003978, 34.745195)" stroke="#000095" stroke-width="2">
+                <line x1="3.492" y1="6.959" x2="3.489" y2="20.311" id="Path" fill-opacity="0.588" fill="#000000"></line>
+                <circle id="Oval" fill="#5A5A5A" stroke-linecap="round" stroke-linejoin="bevel" cx="3.681" cy="3.774" r="3.131"></circle>
+            </g>
+            <g transform="translate(26.985230, 63.453479) rotate(-154.260000) translate(-26.985230, -63.453479) translate(23.485230, 52.953479)" stroke="#000095" stroke-width="2">
+                <line x1="3.492" y1="6.959" x2="3.489" y2="20.311" id="Path" fill-opacity="0.471" fill="#000000"></line>
+                <circle id="Oval" fill="#787878" stroke-linecap="round" stroke-linejoin="bevel" cx="3.681" cy="3.774" r="3.131"></circle>
+            </g>
+            <g transform="translate(50.249373, 63.485711) rotate(154.320000) translate(-50.249373, -63.485711) translate(46.749373, 52.985711)" stroke="#000095" stroke-width="2">
+                <line x1="3.492" y1="6.959" x2="3.49" y2="20.311" id="Path" fill-opacity="0.353" fill="#000000"></line>
+                <circle id="Oval" fill="#969696" stroke-linecap="round" stroke-linejoin="bevel" cx="3.681" cy="3.774" r="3.131"></circle>
+            </g>
+            <g transform="translate(64.780292, 45.314201) rotate(102.900000) translate(-64.780292, -45.314201) translate(61.280292, 34.814201)" stroke="#000095" stroke-width="2">
+                <line x1="3.492" y1="6.959" x2="3.49" y2="20.311" id="Path" fill-opacity="0.235" fill="#000000"></line>
+                <circle id="Oval" fill="#B4B4B4" stroke-linecap="round" stroke-linejoin="bevel" cx="3.681" cy="3.774" r="3.131"></circle>
+            </g>
+            <g transform="translate(59.636204, 22.626758) rotate(51.480000) translate(-59.636204, -22.626758) translate(56.136204, 12.126758)" stroke="#000095" stroke-width="2">
+                <line x1="3.492" y1="6.959" x2="3.491" y2="20.311" id="Path" fill-opacity="0.118" fill="#000000"></line>
+                <circle id="Oval" fill="#D2D2D2" stroke-linecap="round" stroke-linejoin="bevel" cx="3.681" cy="3.774" r="3.131"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
