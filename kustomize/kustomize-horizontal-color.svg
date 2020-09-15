@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 389 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="kustomize-horizontal-color" transform="matrix(0.901936,0,0,0.620948,-33.8444,195.884)">
+        <rect x="37.524" y="-315.459" width="430.707" height="164.742" style="fill:none;"/>
+        <g transform="matrix(1,0,0,1,-0.700921,0.483121)">
+            <g transform="matrix(1.10873,0,0,1.61044,-132.324,-794.925)">
+                <g transform="matrix(0.93236,0,0,0.921286,-32.4839,63.3211)">
+                    <path d="M273.015,265.879C273.015,262.888 270.615,260.459 267.659,260.459L208.469,260.459C205.513,260.459 203.113,262.888 203.113,265.879L203.113,335.997C203.113,338.988 205.513,341.417 208.469,341.417L267.659,341.417C270.615,341.417 273.015,338.988 273.015,335.997L273.015,265.879Z" style="fill:rgb(187,205,242);"/>
+                </g>
+                <g transform="matrix(0.93236,0,0,0.921286,-24.4839,71.3211)">
+                    <path d="M273.015,265.879C273.015,262.888 270.615,260.459 267.659,260.459L208.469,260.459C205.513,260.459 203.113,262.888 203.113,265.879L203.113,335.997C203.113,338.988 205.513,341.417 208.469,341.417L267.659,341.417C270.615,341.417 273.015,338.988 273.015,335.997L273.015,265.879Z" style="fill:rgb(128,160,226);"/>
+                </g>
+                <g>
+                    <g transform="matrix(0.93236,0,0,0.921286,-16.4839,79.3211)">
+                        <path d="M273.015,265.879C273.015,262.888 270.615,260.459 267.659,260.459L208.469,260.459C205.513,260.459 203.113,262.888 203.113,265.879L203.113,335.997C203.113,338.988 205.513,341.417 208.469,341.417L267.659,341.417C270.615,341.417 273.015,338.988 273.015,335.997L273.015,265.879Z" style="fill:rgb(62,95,168);"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-109.383,167.849)">
+                        <text x="294.31px" y="210.142px" style="font-family:'HelveticaNeue-Medium', 'Helvetica Neue', sans-serif;font-weight:500;font-size:60px;fill:white;">K</text>
+                    </g>
+                </g>
+            </g>
+            <g transform="matrix(1.10873,0,0,1.61044,-101.68,-587.813)">
+                <text x="218.008px" y="250.329px" style="font-family:'HelveticaNeue-Medium', 'Helvetica Neue', sans-serif;font-weight:500;font-size:60px;fill:rgb(62,95,168);">u<tspan x="249.748px 278.188px 295.468px 328.348px 377.848px 389.608px 416.908px " y="250.329px 250.329px 250.329px 250.329px 250.329px 250.329px 250.329px ">stomize</tspan></text>
+                <text x="447.568px" y="250.329px" style="font-family:'HelveticaNeue-Medium', 'Helvetica Neue', sans-serif;font-weight:500;font-size:60px;fill:rgb(62,95,168);">.</text>
+                <text x="464.248px" y="250.329px" style="font-family:'HelveticaNeue-MediumItalic', 'Helvetica Neue', sans-serif;font-weight:500;font-style:italic;font-size:60px;fill:rgb(62,95,168);">i</text>
+                <text x="478.708px" y="250.329px" style="font-family:'HelveticaNeue-MediumItalic', 'Helvetica Neue', sans-serif;font-weight:500;font-style:italic;font-size:60px;fill:rgb(62,95,168);">o</text>
+            </g>
+        </g>
+    </g>
+</svg>
