@@ -1,6 +1,6 @@
 # Logos
 
-Various logos in SVG or PNG format.
+Various logos in SVG format.
 
 ## Sources
 
