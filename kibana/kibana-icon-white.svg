@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>kibana-logo-white-64px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="kibana-logo-white-64px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="bounding-box" x="0" y="0" width="64" height="64"></rect>
+        <g id="Group" transform="translate(11.000000, 5.000000)" fill="#FFFFFF">
+            <polygon id="Fill-1" points="-7.10542736e-15 0 -7.10542736e-15 48.581 42.188 0"></polygon>
+            <path d="M24.4434,28.059 L3.7754,51.86 L1.9164,54 L41.3414,54 C39.1784,43.342 32.9924,34.149 24.4434,28.059" id="Fill-2"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>logstash-logo-ink-64px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="logstash-logo-ink-64px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="bounding-box" x="0" y="0" width="64" height="64"></rect>
+        <g id="Group" transform="translate(8.999900, 4.000000)" fill="#343741">
+            <path d="M2,0 L0,0 L0,34 C0,45.598 9.402,55 21,55 L22,55 L22,34 L22,20 C22,8.954 13.046,0 2,0" id="Fill-1"></path>
+            <polygon id="Fill-4" points="27.0001 55 46.0001 55 46.0001 34 27.0001 34"></polygon>
+        </g>
+    </g>
+</svg>
