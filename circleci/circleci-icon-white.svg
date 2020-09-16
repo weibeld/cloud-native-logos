@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 198 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Artboard2" transform="matrix(1,0,0,1,-321.205,272.17)">
+        <rect x="321.205" y="-272.17" width="198" height="201" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="321.205" y="-272.17" width="198" height="201"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(0.24,0,0,0.24,420.411,-170.841)">
+                <g transform="matrix(1,0,0,1,-412.5,-418.75)">
+                    <clipPath id="_clip2">
+                        <rect x="0" y="0" width="825" height="837.5"/>
+                    </clipPath>
+                    <g clip-path="url(#_clip2)">
+                        <g transform="matrix(4.16667,0,0,4.16667,-2.27374e-13,-0.824992)">
+                            <path d="M97.392,0.198C50.524,0.198 11.194,32.31 0.125,75.723C0.051,76.039 0,76.36 0,76.696C0,79.337 2.14,81.477 4.781,81.477L45.248,81.477C47.175,81.477 48.823,80.326 49.585,78.684L49.591,78.686C57.906,60.587 76.168,48.006 97.392,48.006C126.429,48.006 149.981,71.558 149.981,100.6C149.981,129.644 126.429,153.196 97.392,153.196C76.168,153.196 57.906,140.614 49.591,122.51L49.585,122.52C48.823,120.875 47.175,119.727 45.248,119.727L4.781,119.727C2.14,119.727 0,121.861 0,124.508C0,124.835 0.051,125.147 0.119,125.46C11.184,168.876 50.515,201 97.392,201C152.836,201 197.791,156.043 197.791,100.6C197.791,45.151 152.836,0.198 97.392,0.198ZM73.485,100.6C73.485,87.402 84.19,76.696 97.392,76.696C110.592,76.696 121.294,87.402 121.294,100.6C121.294,113.8 110.592,124.508 97.392,124.508C84.19,124.508 73.485,113.8 73.485,100.6Z" style="fill:white;fill-rule:nonzero;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
