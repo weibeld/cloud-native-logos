@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 100 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="ibm-cloud-kubernetes-icon-color" transform="matrix(1,0,0,1,-79.464,-33.4667)">
+        <rect x="79.464" y="33.467" width="100" height="117.936" style="fill:none;"/>
+        <g transform="matrix(0.0590671,0,0,0.0590671,79.464,33.4658)">
+            <path d="M0,584.44C0,611.3 14.78,638.17 44.31,658.55L739.03,1137.96C798.11,1178.73 894.8,1178.74 953.89,1137.96L1648.66,658.62C1678.21,638.24 1692.98,611.36 1692.98,584.49L1692.98,1412.62C1692.98,1439.49 1678.21,1466.36 1648.66,1486.75L953.89,1966.09C894.8,2006.86 798.11,2006.85 739.03,1966.09L44.31,1486.67C14.77,1466.29 0,1439.42 0,1412.54L0,584.44Z" style="fill-rule:nonzero;"/>
+            <path d="M0,584.44C0,611.3 14.78,638.17 44.31,658.55L537,998.51L739.1,859.08C798.19,818.31 894.88,818.32 953.96,859.08L1156,998.53L1648.67,658.63C1678.22,638.24 1692.99,611.37 1692.99,584.5L1692.99,584.12C1692.99,557.24 1678.22,530.37 1648.68,509.99L954,30.58C894.88,-10.17 798.2,-10.17 739.11,30.57L44.34,509.91C14.79,530.29 0,557.17 0,584.03L0,1402.23L0,584.44Z" style="fill:rgb(15,111,255);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>
