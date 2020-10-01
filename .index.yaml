@@ -1,0 +1,638 @@
+subjects:
+  - id: azure-kubernetes-service
+    name: Azure Kubernetes Service
+    aliases:
+      - AKS
+    by: azure
+    url: https://azure.microsoft.com/en-us/services/kubernetes-service/
+  - id: ansible
+    name: Ansible
+    by: red-hat
+    url: https://www.ansible.com/
+  - id: antrea
+    name: Antrea
+    by: vmware
+    url: https://antrea.io/
+  - id: apache
+    name: Apache
+    url: http://apache.org/
+  - id: aqua
+    name: Aqua
+    url: https://www.aquasec.com/
+  - id: argo
+    name: Argo
+    url: https://argoproj.github.io/
+  - id: atlassian
+    name: Atlassian
+    url: https://www.atlassian.com/
+  - id: amazon-web-services
+    name: Amazon Web Services
+    aliases:
+      - AWS
+    url: https://aws.amazon.com/
+  - id: azure
+    name: Azure
+    url: https://azure.microsoft.com/
+  - id: bitbucket
+    name: Bitbucket
+    by: atlassian
+    url: https://bitbucket.org/
+  - id: buildkite
+    name: Buildkite
+    url: https://buildkite.com/
+  - id: calico
+    name: Calico
+    by: tigera
+    url: https://www.projectcalico.org/
+  - id: cassandra
+    name: Apache Cassandra
+    by: apache
+    url: https://cassandra.apache.org/
+  - id: ceph
+    name: Ceph
+    url: https://ceph.io/
+  - id: cert-manager
+    name: cert-manager
+    by: jetstack
+    url: https://cert-manager.io/
+  - id: chartmuseum
+    name: ChartMuseum
+    by: helm
+    url: https://chartmuseum.com/
+  - id: chef
+    name: Chef
+    url: https://www.chef.io/
+  - id: cilium
+    name: Cilium
+    url: https://cilium.io/
+  - id: circleci
+    name: CircleCI
+    url: https://circleci.com/
+  - id: cloud-custodian
+    name: Cloud Custodian
+    url: https://cloudcustodian.io/
+  - id: cloud-foundry
+    name: Cloud Foundry
+    by: vmware
+    url: https://www.cloudfoundry.org/
+  - id: cloud-native-computing-foundation
+    name: Cloud Native Computing Foundation
+    aliases:
+      - CNCF
+    url: https://www.cncf.io/
+  - id: container-network-interface
+    name: Container Network Interface
+    aliases:
+      - CNI
+    url: https://github.com/containernetworking/cni
+  - id: concourse
+    name: Concourse
+    url: https://concourse-ci.org/
+  - id: confluence
+    name: Confluence
+    by: atlassian
+    url: https://www.atlassian.com/software/confluence
+  - id: consul
+    name: Consul
+    by: hashicorp
+    url: https://www.consul.io/
+  - id: containerd
+    name: containerd
+    url: https://containerd.io/
+  - id: contiv
+    name: Contiv
+    by: cisco
+    url: https://contiv.io/
+  - id: contour
+    name: Contour
+    by: vmware
+    url: https://projectcontour.io/
+  - id: coredns
+    name: CoreDNS
+    url: https://coredns.io/
+  - id: apache-couchdb
+    name: Apache CouchDB
+    by: apache
+    url: https://couchdb.apache.org/
+  - id: cri-o
+    name: CRI-O
+    url: https://cri-o.io/
+  - id: container-storage-interface
+    name: Container Storage Interface
+    aliases:
+      - CSI
+    url: https://github.com/container-storage-interface/spec
+  - id: danm
+    name: DANM
+    by: nokia
+    url: https://github.com/nokia/danm
+  - id: dapr
+    name: Dapr
+    url: https://dapr.io/
+  - id: datadog
+    name: Datadog
+    url: https://www.datadoghq.com/
+  - id: dex
+    name: dex
+    url: https://github.com/dexidp/dex
+  - id: digitalocean
+    name: DigitalOcean
+    url: https://www.digitalocean.com/
+  - id: docker-hub
+    name: Docker Hub
+    by: docker
+    url: https://hub.docker.com/
+  - id: docker
+    name: Docker
+    url: https://www.docker.com/
+  - id: drone
+    name: Drone
+    url: https://drone.io/
+  - id: amazon-eks
+    name: Amazon EKS
+    aliases:
+      - Amazon Elastic Kubernetes Service
+    by: amazon-web-services
+    url: https://aws.amazon.com/eks/
+  - id: elastic
+    name: Elastic
+    url: https://www.elastic.co/
+  - id: elasticsearch
+    name: Elasticsearch
+    by: elastic
+    url: https://www.elastic.co/elasticsearch/
+  - id: envoy
+    name: Envoy
+    url: https://www.envoyproxy.io/
+  - id: etcd
+    name: etcd
+    by: coreos
+    url: https://etcd.io/
+  - id: falco
+    name: Falco
+    url: https://falco.org/
+  - id: firecracker
+    name: Firecracker
+    by: amazon-web-services
+    url: https://firecracker-microvm.github.io/
+  - id: fission
+    name: Fission
+    url: https://fission.io/
+  - id: flannel
+    name: flannel
+    by: coreos
+    url: https://github.com/coreos/flannel
+  - id: fluentd
+    name: Fluentd
+    url: https://www.fluentd.org/
+  - id: flux
+    name: Flux
+    url: https://fluxcd.io/
+  - id: google-cloud-platform
+    name: Google Cloud Platform
+    aliases:
+      - GCP
+    by: google
+    url: https://cloud.google.com/
+  - id: git
+    name: Git
+    url: https://git-scm.com/
+  - id: github-actions
+    name: GitHub Actions
+    by: github
+    url: https://github.com/features/actions
+  - id: github
+    name: GitHub
+    url: https://github.com/
+  - id: gitlab
+    name: GitLab
+    url: https://about.gitlab.com/
+  - id: google-kubernetes-engine
+    name: Google Kubernetes Engine
+    aliases:
+      - GKE
+    by: google-cloud-platform
+    url: https://cloud.google.com/kubernetes-engine
+  - id: gmail
+    name: Gmail
+    by: google
+    url: https://www.google.com/gmail/about/
+  - id: go
+    name: Go
+    url: https://golang.org/
+  - id: grafana
+    name: Grafana
+    url: https://grafana.com/
+  - id: gravitational
+    name: Gravitational
+    url: https://gravitational.com/
+  - id: gravity
+    name: Gravity
+    by: gravitational
+    url: https://gravitational.com/gravity/
+  - id: gvisor
+    name: gVisor
+    by: google
+    url: https://gvisor.dev/
+  - id: hadoop
+    name: Apache Hadoop
+    by: apache
+    url: https://hadoop.apache.org/
+  - id: haproxy
+    name: HAProxy
+    url: https://www.haproxy.com/
+  - id: harbor
+    name: Harbor
+    url: https://goharbor.io/
+  - id: hashicorp
+    name: HashiCorp
+    url: https://www.hashicorp.com/
+  - id: helm
+    name: Helm
+    url: https://helm.sh/
+  - id: ibm-cloud-kubernetes-service
+    name: IBM Cloud Kubernetes Service
+    by: ibm-cloud
+    url: https://www.ibm.com/cloud/container-service/
+  - id: ibm-cloud
+    name: IBM Cloud
+    url: https://www.ibm.com/cloud
+  - id: istio
+    name: Istio
+    url: https://istio.io/
+  - id: jaeger
+    name: Jaeger
+    url: https://www.jaegertracing.io/
+  - id: jenkins-x
+    name: Jenkins X
+    by: jenkins
+    url: https://jenkins-x.io/
+  - id: jenkins
+    name: Jenkins
+    url: https://www.jenkins.io/
+  - id: jira
+    name: Jira
+    by: atlassian
+    url: https://www.atlassian.com/software/jira
+  - id: jsonnet
+    name: Jsonnet
+    by: google
+    url: https://jsonnet.org/
+  - id: k3s
+    name: K3s
+    by: rancher
+    url: https://k3s.io/
+  - id: apache-kafka
+    name: Apache Kafka
+    by: apache
+    url: https://kafka.apache.org/
+  - id: kaniko
+    name: Kaniko
+    url: https://github.com/GoogleContainerTools/kaniko
+  - id: kapitan
+    name: Kapitan
+    url: https://kapitan.dev/
+  - id: keda
+    name: KEDA
+    url: https://keda.sh/
+  - id: keptn
+    name: Keptn
+    url: https://keptn.sh/
+  - id: keycloak
+    name: Keycloak
+    url: https://www.keycloak.org/
+  - id: kibana
+    name: Kibana
+    by: elastic
+    url: https://www.elastic.co/kibana
+  - id: kind
+    name: kind
+    aliases:
+      - Kubernetes in Docker
+    by: kubernetes
+    url: https://kind.sigs.k8s.io/
+  - id: knative
+    name: Knative
+    url: https://knative.dev/
+  - id: kong
+    name: Kong
+    url: https://konghq.com/
+  - id: kops
+    name: kops
+    aliases:
+      - Kubernetes Operations
+    by: kubernetes
+    url: https://kops.sigs.k8s.io/
+  - id: kube-bench
+    name: kube-bench
+    by: aqua
+    url: https://github.com/aquasecurity/kube-bench
+  - id: kube-hunter
+    name: kube-hunter
+    by: aqua
+    url: https://github.com/aquasecurity/kube-hunter
+  - id: kube-router
+    name: kube-router
+    url: https://www.kube-router.io/
+  - id: kubeadm
+    name: kubeadm
+    by: kubernetes
+    url: https://github.com/kubernetes/kubeadm
+  - id: kubeedge
+    name: KubeEdge
+    url: https://kubeedge.io/
+  - id: kubeflow
+    name: Kubeflow
+    url: https://www.kubeflow.org/
+  - id: kubernetes
+    name: Kubernetes
+    url: https://kubernetes.io/
+  - id: kubespray
+    name: Kubespray
+    by: kubernetes
+    url: https://kubespray.io/
+  - id: kubevirt
+    name: KubeVirt
+    url: https://kubevirt.io/
+  - id: kuma
+    name: Kuma
+    url: https://kuma.io/
+  - id: kustomize
+    name: Kustomize
+    by: kubernetes
+    url: https://kustomize.io/
+  - id: letsencrypt
+    name: Let's Encrypt
+    url: https://letsencrypt.org/
+  - id: linkerd
+    name: Linkerd
+    url: https://linkerd.io/
+  - id: linux-foundation
+    name: Linux Foundation
+    url: https://www.linuxfoundation.org/
+  - id: linuxkit
+    name: LinuxKit
+    url: https://github.com/linuxkit/linuxkit
+  - id: logstash
+    name: Logstash
+    by: elastic
+    url: https://www.elastic.co/logstash
+  - id: loki
+    name: Loki
+    by: grafana
+    url: https://grafana.com/oss/loki/
+  - id: longhorn
+    name: Longhorn
+    by: rancher
+    url: https://rancher.com/products/longhorn/
+  - id: lxd
+    name: LXD
+    url: https://linuxcontainers.org/lxd/
+  - id: apache-maven
+    name: Apache Maven
+    url: http://maven.apache.org/
+  - id: medium
+    name: Medium
+    url: https://medium.com/
+  - id: apache-mesos
+    name: Apache Mesos
+    by: apache
+    url: http://mesos.apache.org/
+  - id: metallb
+    name: MetalLB
+    url: https://metallb.universe.tf/
+  - id: microk8s
+    name: MicroK8s
+    by: canonical
+    url: https://microk8s.io/
+  - id: minikube
+    name: Minikube
+    by: minikube
+    url: https://github.com/kubernetes/minikube
+  - id: minio
+    name: MinIO
+    url: https://min.io/
+  - id: mongodb
+    name: MongoDB
+    url: https://www.mongodb.com/
+  - id: moodle
+    name: Moodle
+    url: https://moodle.org/
+  - id: multus
+    name: Multus
+    by: intel
+    url: https://github.com/intel/multus-cni
+  - id: mysql
+    name: MySQL
+    by: oracle
+    url: https://www.mysql.com/
+  - id: nats
+    name: NATS
+    url: https://nats.io/
+  - id: netdata
+    name: Netdata
+    url: https://www.netdata.cloud/
+  - id: nginx
+    name: NGINX
+    url: https://www.nginx.com/
+  - id: nodejs
+    name: Node.js
+    url: https://nodejs.org/
+  - id: nomad
+    name: Nomad
+    by: hashicorp
+    url: https://www.nomadproject.io/
+  - id: nuage-networks
+    name: Nuage Networks
+    url: https://www.nuagenetworks.net/
+  - id: octant
+    name: Octant
+    by: vmware
+    url: https://octant.dev/
+  - id: open-policy-agent
+    name: Open Policy Agent
+    aliases:
+      - OPA
+    url: https://www.openpolicyagent.org/
+  - id: opencensus
+    name: OpenCensus
+    url: https://opencensus.io/
+  - id: openebs
+    name: OpenEBS
+    url: https://openebs.io/
+  - id: openid
+    name: OpenID
+    url: https://openid.net/
+  - id: openmetrics
+    name: OpenMetrics
+    url: https://openmetrics.io/
+  - id: open-service-mesh
+    name: Open Service Mesh
+    aliases:
+      - OSM
+    url: https://openservicemesh.io/
+  - id: openshift
+    name: OpenShift
+    by: red-hat
+    url: https://www.openshift.com/
+  - id: openstack
+    name: OpenStack
+    url: https://www.openstack.org/
+  - id: opentelemetry
+    name: OpenTelemetry
+    url: https://opentelemetry.io/
+  - id: opentracing
+    name: OpenTracing
+    url: https://opentracing.io/
+  - id: operator-framework
+    name: Operator Framework
+    by: coreos
+    url: https://operatorframework.io/
+  - id: packer
+    name: Packer
+    by: hashicorp
+    url: https://www.packer.io/
+  - id: prometheus
+    name: Prometheus
+    url: https://prometheus.io/
+  - id: pulumi
+    name: Pulumi
+    url: https://www.pulumi.com/
+  - id: puppet
+    name: Puppet
+    url: https://puppet.com/
+  - id: python
+    name: Python
+    url: https://www.python.org/
+  - id: quay
+    name: Quay
+    by: red-hat
+    url: https://quay.io/
+  - id: rackspace
+    name: Rackspace
+    url: https://www.rackspace.com/
+  - id: rancher
+    name: Rancher
+    url: https://rancher.com/
+  - id: rio
+    name: Rio
+    by: rancher
+    url: https://rio.io/
+  - id: rancher-kubernetes-engine
+    name: Rancher Kubernetes Engine
+    aliases:
+      - RKE
+    by: rancher
+    url: https://rancher.com/products/rke/
+  - id: rkt
+    name: rkt
+    by: coreos
+    url: https://coreos.com/rkt/
+  - id: rook
+    name: Rook
+    url: https://rook.io/
+  - id: serverless-framework
+    name: Serverless Framework
+    url: https://www.serverless.com/
+  - id: singularity
+    name: Singularity
+    url: https://sylabs.io/singularity/
+  - id: skaffold
+    name: Skaffold
+    url: https://skaffold.dev/
+  - id: slack
+    name: Slack
+    url: https://slack.com/
+  - id: snyk
+    name: Snyk
+    url: https://snyk.io/
+  - id: sonobuoy
+    name: Sonobuoy
+    by: vmware
+    url: https://sonobuoy.io/
+  - id: apache-spark
+    name: Apache Spark
+    by: apache
+    url: https://spark.apache.org/
+  - id: spinnaker
+    name: Spinnaker
+    url: https://spinnaker.io/
+  - id: spring
+    name: Spring
+    url: https://spring.io/
+    by: vmware
+  - id: stripe
+    name: Stripe
+    url: https://stripe.com/
+  - id: sysdig
+    name: Sysdig
+    url: https://sysdig.com/
+  - id: tekton
+    name: Tekton
+    url: https://tekton.dev/
+  - id: teleport
+    name: Teleport
+    by: gravitational
+    url: https://gravitational.com/teleport/
+  - id: telepresence
+    name: Telepresence
+    by: ambassador
+    url: https://www.telepresence.io/
+  - id: tensorflow
+    name: TensorFlow
+    url: https://www.tensorflow.org/
+  - id: terraform
+    name: Terraform
+    by: hashicorp
+    url: https://www.terraform.io/
+  - id: apache-tomcat
+    name: Apache Tomcat
+    by: apache
+    url: http://tomcat.apache.org/
+  - id: traefik-labs
+    name: Traefik Labs
+    url: https://traefik.io/
+  - id: traefik-proxy
+    name: Traefik Proxy
+    by: traefik-labs
+    url: https://traefik.io/traefik/
+  - id: travis-ci
+    name: Travis CI
+    url: https://travis-ci.org/
+  - id: trello
+    name: Trello
+    by: atlassian
+    url: https://trello.com/
+  - id: trivy
+    name: Trivy
+    by: aqua
+    url: https://github.com/aquasecurity/trivy
+  - id: tungsten-fabric
+    name: Tungsten Fabric
+    url: https://tungsten.io/
+  - id: tyk
+    name: Tyk
+    url: https://tyk.io/
+  - id: vagrant
+    name: Vagrant
+    by: hashicorp
+    url: https://www.vagrantup.com/
+  - id: vault
+    name: Vault
+    by: hashicorp
+    url: https://www.vaultproject.io/
+  - id: velero
+    name: Velero
+    by: vmware
+    url: https://velero.io/
+  - id: virtual-kubelet
+    name: Virtual Kubelet
+    url: https://virtual-kubelet.io/
+  - id: weave-net
+    name: Weave Net
+    by: weaveworks
+    url: https://www.weave.works/oss/net/
+  - id: apache-zookeeper
+    name: Apache Zookeeper
+    by: apache
+    url: https://zookeeper.apache.org/

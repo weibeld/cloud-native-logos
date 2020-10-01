@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "subjectID": {
+      "description": "The ID of a subject, used for identifying a subject ('subjects[].id') and optionally the \"parent subject\" that the subject is managed by ('subjects[].by').",
+      "examples": [ "google-cloud-platform" ],
+      "type": "string",
+      "pattern": "^[a-z0-9]+[a-z0-9-]*$"
+    },
+    "tag": {
+      "description": "A tag that can be assigned to a subject.",
+      "examples": [ "ci-cd", "cloud-platform", "security" ],
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    }
+  },
+  "type": "object",
+  "properties": {
+    "subjects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "$ref": "#/definitions/subjectID" },
+          "name": {
+            "description": "The friendly (and correctly spelled) name of a subject.",
+            "examples": [ "Google Cloud Platform" ],
+            "type": "string"
+          },
+          "aliases": {
+            "description": "Alternative friendly names of a subject.",
+            "examples": [ [ "GCP" ] ],
+            "type": "array",
+            "items": { "type": "string" },
+            "uniqueItems": true
+          },
+          "by": { "$ref": "#/definitions/subjectID" },
+          "url": {
+            "description": "The URL of a subject.",
+            "examples": [ "https://cloud.google.com/" ],
+            "type": "string",
+            "format": "uri"
+          },
+          "tags": {
+            "description": "The set of tags assigned to a subject.",
+            "examples": [ ["cloud-platform", "google"] ],
+            "type": "array",
+            "items": { "$ref": "#/definitions/tag" },
+            "uniqueItems": true
+          }
+        },
+        "required": [ "id", "name", "url" ],
+        "additionalProperties": false
+      }
+    },
+    "tags": {
+      "description": "The allowed set of tags that can be assigned to a subject.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/tag" },
+      "uniqueItems": true
+    }
+  },
+  "required": [ "subjects" ],
+  "additionalProperties": false
+}
