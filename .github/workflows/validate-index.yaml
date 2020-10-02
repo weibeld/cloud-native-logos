@@ -1,0 +1,108 @@
+name: validate-index
+on: push
+env:
+  INDEX: .index.yaml
+  SCHEMA: .schemas/index.schema.json
+jobs:
+  validate-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # TODO: Put ajv binary (/usr/local/bin/ajv) in cache and access from there
+      - name: install-ajv
+        run: sudo npm install -g ajv-cli
+      - name: validate
+        run: ajv validate --verbose  --all-errors -s "$SCHEMA" -d "$INDEX"
+  validate-no-duplicate-index-entries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # TODO: put yq binary (/usr/local/bin/yq) in cache and access from there (https://github.com/actions/cache#skipping-steps-based-on-cache-hit)
+      - name: install-yq
+        run: sudo wget -q -O /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/3.4.0/yq_linux_amd64 && sudo chmod +x /usr/local/bin/yq
+      - name: validate
+        run: |
+          duplicates=$(yq read "$INDEX" 'subjects[*].id' | sort | uniq -d)
+          if [[ "$duplicates" ]]; then
+            echo -e "The following subjects have duplicate entries in the index:\n$duplicates"
+            exit 1
+          fi
+          exit 0
+  validate-each-dir-has-index-entry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # TODO: put yq binary (/usr/local/bin/yq) in cache and access from there (https://github.com/actions/cache#skipping-steps-based-on-cache-hit)
+      - name: install-yq
+        run: sudo wget -q -O /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/3.4.0/yq_linux_amd64 && sudo chmod +x /usr/local/bin/yq
+      - name: validate
+        run: |
+          for d in */; do
+            [[ "$(yq read "$INDEX" "subjects(id==${d%/})")" ]] || missing+=("${d%/}")
+          done
+          if [[ "${missing[@]}" ]]; then
+            echo "The following data directories have no corresponding index entry:"
+            printf '%s\n' "${missing[@]}"
+            exit 1
+          fi
+          exit 0
+  validate-each-index-entry-has-dir:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+      - name: install-yq
+        run: sudo wget -q -O /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/3.4.0/yq_linux_amd64 && sudo chmod +x /usr/local/bin/yq
+      - name: validate
+        run: |
+          for i in $(yq read "$INDEX" 'subjects[*].id'); do
+            [[ -d "$i" ]] || missing+=("$i")
+          done
+          if [[ "${missing[@]}" ]]; then
+            echo "The following index entries have no corresponding data directory:"
+            printf '%s\n' "${missing[@]}"
+            exit 1
+          fi
+          exit 0
+  validate-parent-subjects:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+      - name: install-yq
+        run: sudo wget -q -O /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/3.4.0/yq_linux_amd64 && sudo chmod +x /usr/local/bin/yq
+      - name: validate
+        run: |
+          ids=$(yq read "$INDEX" 'subjects[*].id')
+          for i in $ids; do
+            by=$(yq read .index.yaml "subjects(id==$i).by")
+            if [[ "$by" ]] && ! grep -q "^$by$" <<<"$ids"; then
+              unknown+=("$i: $by")
+            fi
+          done
+          if [[ "$unknown" ]]; then
+            echo "The following subjects have unknown parent subjects:"
+            printf '%s\n' "${unknown[@]}"
+            exit 1
+          fi
+          exit 0
+  validate-tags:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v2
+      - name: install-yq
+        run: sudo wget -q -O /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/3.4.0/yq_linux_amd64 && sudo chmod +x /usr/local/bin/yq
+      - name: validate
+        run: |
+          ids=$(yq read .index.yaml 'subjects[*].id')
+          tags=$(yq read .index.yaml 'tags[*]')
+          for i in $ids; do
+            for t in $(yq read .index.yaml "subjects(id==$i).tags[*]"); do
+              grep -q "^$t$" <<<"$tags" || acc+=($t)
+            done
+            [[ "$acc" ]] && unknown+=("$i: ${acc[*]}") && unset acc
+          done
+          if [[ "$unknown" ]]; then
+            echo "The following subjects have unknown tags:"
+            printf '%s\n' "${unknown[@]}"
+            exit 1
+          fi
+          exit 0
