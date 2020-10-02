@@ -12,7 +12,7 @@ jobs:
       - name: install-ajv
         run: sudo npm install -g ajv-cli
       - name: validate
-        run: ajv validate --verbose  --all-errors -s "$SCHEMA" -d "$INDEX"
+        run: ajv validate --all-errors -s "$SCHEMA" -d "$INDEX"
   validate-no-duplicate-index-entries:
     runs-on: ubuntu-latest
     steps:
