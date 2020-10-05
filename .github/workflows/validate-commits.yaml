@@ -1,0 +1,61 @@
+on: push
+env:
+  SCHEMA: .schemas/commit.schema.json
+jobs:
+  validate-commits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      # TODO: Put ajv binary (/usr/local/bin/ajv) in cache and access from there
+      - name: install-ajv
+        run: sudo npm install -g ajv-cli
+      - name: install-yq
+        run: sudo wget -q -O /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/3.4.0/yq_linux_amd64 && sudo chmod +x /usr/local/bin/yq
+      - name: validate
+        run: |
+          set -e
+          # Get the most recent commit where this workflow succeeded
+          base=$(curl -s "https://api.github.com/repos/${{ github.repository }}/actions/workflows/$(basename ${{ github.workflow }})/runs?status=success" | jq -r '.workflow_runs | sort_by(.run_number) | last | .head_sha')
+          # If this workflow has no successful run yet, use the root commit as the base
+          [[ "$base" = null ]] && base=$(git rev-list --max-parents=0 HEAD)
+          # Get all SVG files that have been added or modified since the base commit
+          files=($(git diff-tree --name-only --diff-filter=AM -r "$base" HEAD | sed -ne '/^[^\.].*\/.*\.svg$/p'))
+          # Determine the commit that last added/modified each SVG file
+          declare -A map
+          for f in "${files[@]}"; do
+            map[$(git log -n 1 --format=%H "$f")]+="$f "
+          done
+          # Validate the YAML spec in the commit message of each identified commit
+          for c in "${!map[@]}"; do
+            msg=$(git log --format=%B -n 1 "$c")
+            yaml=$(mktemp -d)/tmp.yaml
+            sed -n '/^---$/ { :a; p; n; ba; }' <<<"$msg" >"$yaml"
+            # Ensure that YAML spec is not empty
+            if ! [[ -s "$yaml" ]]; then
+              echo -e "\e[31mError in commit $c:\n$(sed 's/^/  > /' <<<$msg)\e[0m"
+              echo -e "\e[31mYAML spec is missing (below are the files that this commit added/modified):\e[0m"
+              echo ${map[$c]% } | tr ' ' $'\n' | sed 's/^/  - /'
+              exit 1
+            fi
+            # Ensure that YAML spec matches schema
+            if ! out=$(ajv validate -s "$SCHEMA" -d "$yaml" 2>&1); then
+              echo -e "\e[31mError in commit $c:\n$(sed 's/^/  > /' <<<$msg)\e[0m"
+              echo -e "\e[31mThe YAML spec is invalid (validation output below):\e[0m\n$out"
+              exit 1
+            fi
+            # Ensure that YAML spec covers all files last added/modified by this commit
+            keys=$(yq read -p p "$yaml" '*' | tr -d '"')
+            if ! [[ "$keys" =~ ^source$|^edited$|^converted ]]; then
+              for f in ${map[$c]}; do
+                grep -q "^$f$" <<<"$keys" || missing+=("$f")
+              done
+              if [[ "${missing[@]}" ]]; then
+                echo -e "\e[31mError in commit $c:\n$(sed 's/^/  > /' <<<$msg)\e[0m"
+                echo -e "\e[31mThe YAML spec does not include the following files:\e[0m"
+                printf '%s\n' "${missing[@]}" | sed 's/^/  - /'
+                exit 1
+              fi
+            fi
+          done

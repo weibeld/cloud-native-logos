@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+
+  "$comment": "---------------------------------------------------------------",
+  "$comment": "Subschema definitions",
+  "$comment": "---------------------------------------------------------------",
+  "definitions": {
+    "sourceProperties": {
+    "description": "The source of a logo which can be either a URL with an optional description, or, if no URL is available, just a description.",
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "url": { "type": "string", "format": "uri" },
+            "description": { "type": "string" }
+          },
+          "required": [ "url" ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "description": {"type": "string" }
+          },
+          "required": [ "description" ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "source": {
+      "description": "Object specifying that a logo has been obtained unchanged from some source.",
+      "type": "object",
+      "properties": {
+        "source": { "$ref": "#/definitions/sourceProperties" }
+      },
+      "required": [ "source" ],
+      "additionalProperties": false
+    },
+    "edited": {
+      "description": "Object specifying that a logo has been edited.",
+      "type": "object",
+      "properties": {
+        "edited": {
+          "type": "object",
+          "properties": {
+            "description": {
+              "description": "Description of how the logo has been edited.",
+              "type": "string"
+            },
+            "tool": {
+              "description": "The tool with which the logo has been edited",
+              "examples": [ "Affinity Designer" ],
+              "type": "string"
+            },
+            "document": {
+              "description": "The document in which the logo has been edited.",
+              "examples": [ "microk8s/microk8s.afdesign"],
+              "type": "string"
+            },
+            "sources": {
+              "description": "A list of sources serving as input for the edited logo (e.g. an icon version of the logo).",
+              "type": "array",
+              "items": { "$ref": "#/definitions/sourceProperties" }
+            },
+            "fonts": {
+              "description": "The fonts used in the logo (this information is important if the text in the logo has been converted to curves and thus the initial font isn't recognisable anymore).",
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": [ "description", "tool", "document" ],
+          "additionalProperties": false
+        }
+      },
+      "required": [ "edited" ],
+      "additionalProperties": false
+    },
+    "converted": {
+      "description": "Object specifying that a logo file has been converted to SVG from another format.",
+      "type": "object",
+      "properties": {
+        "converted": {
+          "type": "object",
+          "properties": {
+            "source": { "$ref": "#/definitions/sourceProperties" },
+            "inputFormat": {
+              "description": "The format from which the logo has been converted to SVG.",
+              "examples": [ "EPS" ], 
+              "type": "string"
+            },
+            "tool": {
+              "description": "The tool with which the logo has been converted.",
+              "examples": [ "Inkscape" ],
+              "type": "string"
+            },
+            "description": {
+              "description": "Any description about the logo conversion.",
+              "type": "string"
+            }
+          },
+          "required": [ "source", "inputFormat", "tool" ],
+          "additionalProperties": false
+        }
+      },
+      "required": [ "converted" ],
+      "additionalProperties": false
+    }
+  },
+  "$comment": "---------------------------------------------------------------",
+  "$comment": "Root schema definition",
+  "$comment": "---------------------------------------------------------------",
+  "anyOf": [
+    { "$ref": "#/definitions/source" },
+    { "$ref": "#/definitions/edited" },
+    { "$ref": "#/definitions/converted" },
+    {
+      "type": "object",
+      "additionalProperties": {
+        "anyOf": [
+          { "$ref": "#/definitions/source" },
+          { "$ref": "#/definitions/edited" },
+          { "$ref": "#/definitions/converted" }
+        ]
+      }
+    }
+  ]
+}
