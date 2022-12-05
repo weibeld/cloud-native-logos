@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="73px" viewBox="0 0 64 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>terraform-horizontal-color</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="terraform-horizontal-color" transform="translate(0.000000, 0.840000)">
+            <polygon id="Path" fill="#623CE4" points="21.84 12.69 41.52 24.05 41.52 46.77 21.84 35.41"></polygon>
+            <polygon id="Path" fill="#3C2AA8" points="43.67 24.05 43.67 46.77 63.35 35.41 63.35 12.68"></polygon>
+            <polygon id="Path" fill="#623CE4" points="-3.55271368e-15 0 -3.55271368e-15 22.72 19.68 34.09 19.68 11.36"></polygon>
+            <polygon id="Path" fill="#623CE4" points="21.84 60.62 41.51 71.99 41.51 49.41 41.51 49.26 21.84 37.9"></polygon>
+        </g>
+    </g>
+</svg>
